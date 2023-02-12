@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#entry-form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#entry-list {
+  width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#entry-list .entry {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#entry-list .entry .entry-date {
+  font-weight: bold;
+}
+
+#entry-list .entry .entry-comments {
+  margin-top: 10px;
+}
+
+#entry-list .entry .entry-image {
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.full-image {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-image img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.full-image.visible {
+  display: flex;
+}
