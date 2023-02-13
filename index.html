@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Fishing Diary</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Journal</title>
 </head>
 
 <body>
-    <h1>Fishing Diary</h1>
-    <div id="entry-form">
-        <form id="new-entry-form">
-            <label for="entry-date">Date:</label>
-            <input type="date" id="entry-date" name="entry-date">
-            <br><br>
-            <label for="entry-image">Image:</label>
-            <input type="file" id="entry-image" name="entry-image" accept="image/*">
-            <br><br>
-            <label for="entry-comments">Comments:</label>
-            <textarea id="entry-comments" name="entry-comments"></textarea>
-            <br><br>
-            <button type="submit">Save Entry</button>
-        </form>
-    </div>
-    <br><br>
-    <div id="entry-list">
-    </div>
+    <h1>Nagu ikka</h1>
+    <form id="journal-form">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" required></textarea>
+        <label for="images">Images:</label>
+        <input type="file" id="images" multiple>
+        <button type="submit">Add Entry</button>
+    </form>
+    <div id="entries"></div>
+    <script src="script.js"></script>
 </body>
-<script src="app.js"></script>
 
 </html>
